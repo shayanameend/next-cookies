@@ -1,24 +1,35 @@
 {
-	"name": "next-cookies",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev --turbopack",
-		"build": "next build",
-		"start": "next start"
-	},
-	"packageManager": "pnpm@10.6.2",
-	"dependencies": {
-		"react": "^19.0.0",
-		"react-dom": "^19.0.0",
-		"next": "15.2.2"
-	},
-	"devDependencies": {
-		"typescript": "^5",
-		"@types/node": "^20",
-		"@types/react": "^19",
-		"@types/react-dom": "^19",
-		"@tailwindcss/postcss": "^4",
-		"tailwindcss": "^4"
-	}
+  "name": "next-cookies",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "ui": "shadcn",
+    "biome:only": "biome check",
+    "biome:safe": "biome check --write",
+    "biome:unsafe": "biome check --write --force",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start"
+  },
+  "packageManager": "pnpm@10.6.2",
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.482.0",
+    "next": "15.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "shadcn": "2.4.0-canary.14",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
 }
